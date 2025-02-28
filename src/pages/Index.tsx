@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import Header from "@/components/Header";
 
 const Index = () => {
   const [bannerText, setBannerText] = useState("Welcome to My Portfolio");
@@ -27,6 +28,9 @@ const Index = () => {
   
   return (
     <div className="min-h-screen bg-gray-50">
+      {/* Header */}
+      <Header />
+      
       {/* Dynamic Banner */}
       <div className="w-full bg-gradient-to-r from-purple-500 to-blue-500 py-16 px-4 text-center transition-all duration-1000 ease-in-out">
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 transition-opacity duration-500">
